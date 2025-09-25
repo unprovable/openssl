@@ -14050,7 +14050,7 @@ int setup_tests(void)
 #endif /* OSSL_NO_USABLE_TLS1_3 */
 # ifndef OPENSSL_NO_TLS1_2
     /* Test with both TLSv1.3 and 1.2 versions */
-    ADD_ALL_TESTS(test_key_exchange, 22);
+    ADD_ALL_TESTS(test_key_exchange, 24);
 #  if !defined(OPENSSL_NO_EC) && !defined(OPENSSL_NO_DH)
     ADD_ALL_TESTS(test_negotiated_group,
                   4 * (OSSL_NELEM(ecdhe_kexch_groups)
