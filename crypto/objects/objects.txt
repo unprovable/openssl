@@ -2069,5 +2069,5 @@ nistKems 3 : id-alg-ml-kem-1024 : ML-KEM-1024
 
 !Alias nistHybridKems nistAlgorithms 4
 nistHybridKems 1 : X25519MLKEM768 : X25519MLKEM768
-nistHybridKems 2 : SECP256R1MLKEM768 : SecP256r1MLKEM768
-nistHybridKems 3 : SECP384R1MLKEM1024 : SecP384r1MLKEM1024
+nistHybridKems 2 : SecP256r1MLKEM768 : SecP256r1MLKEM768
+nistHybridKems 3 : SecP384r1MLKEM1024 : SecP384r1MLKEM1024
