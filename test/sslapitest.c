@@ -5522,6 +5522,10 @@ static int test_key_exchange(int idx)
             kexch_name0 = "X25519MLKEM768";
             kexch_names = kexch_name0;
             break;
+        case 22:
+            kexch_alg = NID_X25519MLKEM768;
+            kexch_name0 = "X25519MLKEM768";
+            break;
 #   endif
         case 17:
             kexch_groups = NULL;
@@ -14039,7 +14043,7 @@ int setup_tests(void)
 #endif /* OSSL_NO_USABLE_TLS1_3 */
 # ifndef OPENSSL_NO_TLS1_2
     /* Test with both TLSv1.3 and 1.2 versions */
-    ADD_ALL_TESTS(test_key_exchange, 21);
+    ADD_ALL_TESTS(test_key_exchange, 22);
 #  if !defined(OPENSSL_NO_EC) && !defined(OPENSSL_NO_DH)
     ADD_ALL_TESTS(test_negotiated_group,
                   4 * (OSSL_NELEM(ecdhe_kexch_groups)

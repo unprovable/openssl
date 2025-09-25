@@ -10,7 +10,7 @@
  */
 
 /* Serialized OID's */
-static const unsigned char so[9571] = {
+static const unsigned char so[9598] = {
     0x2A,0x86,0x48,0x86,0xF7,0x0D,                 /* [    0] OBJ_rsadsi */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x01,            /* [    6] OBJ_pkcs */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x02,0x02,       /* [   13] OBJ_md2 */
@@ -1353,9 +1353,12 @@ static const unsigned char so[9571] = {
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x01,0x09,0x10,0x03,0x1E,  /* [ 9538] OBJ_HKDF_SHA512 */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x01,0x09,0x10,0x0D,  /* [ 9549] OBJ_id_smime_ori */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x01,0x09,0x10,0x0D,0x03,  /* [ 9559] OBJ_id_smime_ori_kem */
+    0x60,0x86,0x48,0x01,0x65,0x03,0x04,0x04,0x01,  /* [ 9570] OBJ_X25519MLKEM768 */
+    0x60,0x86,0x48,0x01,0x65,0x03,0x04,0x04,0x02,  /* [ 9579] OBJ_SecP256r1MLKEM768 */
+    0x60,0x86,0x48,0x01,0x65,0x03,0x04,0x04,0x03,  /* [ 9588] OBJ_SecP384r1MLKEM1024 */
 };
 
-#define NUM_NID 1501
+#define NUM_NID 1504
 static const ASN1_OBJECT nid_objs[NUM_NID] = {
     {"UNDEF", "undefined", NID_undef},
     {"rsadsi", "RSA Data Security, Inc.", NID_rsadsi, 6, &so[0]},
@@ -2858,9 +2861,12 @@ static const ASN1_OBJECT nid_objs[NUM_NID] = {
     {"id-alg-hkdf-with-sha512", "HKDF-SHA512", NID_HKDF_SHA512, 11, &so[9538]},
     {"id-smime-ori", "id-smime-ori", NID_id_smime_ori, 10, &so[9549]},
     {"id-smime-ori-kem", "id-smime-ori-kem", NID_id_smime_ori_kem, 11, &so[9559]},
+    {"X25519MLKEM768", "X25519MLKEM768", NID_X25519MLKEM768, 9, &so[9570]},
+    {"SecP256r1MLKEM768", "SecP256r1MLKEM768", NID_SecP256r1MLKEM768, 9, &so[9579]},
+    {"SecP384r1MLKEM1024", "SecP384r1MLKEM1024", NID_SecP384r1MLKEM1024, 9, &so[9588]},
 };
 
-#define NUM_SN 1492
+#define NUM_SN 1495
 static const unsigned int sn_objs[NUM_SN] = {
      364,    /* "AD_DVCS" */
      419,    /* "AES-128-CBC" */
@@ -3166,11 +3172,14 @@ static const unsigned int sn_objs[NUM_SN] = {
     1205,    /* "SSKDF" */
       16,    /* "ST" */
      143,    /* "SXNetID" */
+    1502,    /* "SecP256r1MLKEM768" */
+    1503,    /* "SecP384r1MLKEM1024" */
     1062,    /* "SipHash" */
     1021,    /* "TLS1-PRF" */
      458,    /* "UID" */
        0,    /* "UNDEF" */
     1034,    /* "X25519" */
+    1501,    /* "X25519MLKEM768" */
     1035,    /* "X448" */
       11,    /* "X500" */
      378,    /* "X500algorithms" */
@@ -4356,7 +4365,7 @@ static const unsigned int sn_objs[NUM_SN] = {
     1289,    /* "zstd" */
 };
 
-#define NUM_LN 1492
+#define NUM_LN 1495
 static const unsigned int ln_objs[NUM_LN] = {
      363,    /* "AD Time Stamping" */
      405,    /* "ANSI X9.62" */
@@ -4655,6 +4664,8 @@ static const unsigned int ln_objs[NUM_LN] = {
     1210,    /* "SRVName" */
     1025,    /* "SSH Client" */
     1026,    /* "SSH Server" */
+    1502,    /* "SecP256r1MLKEM768" */
+    1503,    /* "SecP384r1MLKEM1024" */
      512,    /* "Secure Electronic Transactions" */
      386,    /* "Security" */
     1348,    /* "Security Qualities" */
@@ -4728,6 +4739,7 @@ static const unsigned int ln_objs[NUM_LN] = {
     1384,    /* "WLAN MAC Address" */
     1322,    /* "Wi-SUN Alliance Field Area Network (FAN)" */
     1034,    /* "X25519" */
+    1501,    /* "X25519MLKEM768" */
     1035,    /* "X448" */
       12,    /* "X509" */
      402,    /* "X509v3 AC Targeting" */
@@ -5852,7 +5864,7 @@ static const unsigned int ln_objs[NUM_LN] = {
      125,    /* "zlib compression" */
 };
 
-#define NUM_OBJ 1349
+#define NUM_OBJ 1352
 static const unsigned int obj_objs[NUM_OBJ] = {
        0,    /* OBJ_undef                        0 */
      181,    /* OBJ_iso                          1 */
@@ -6972,8 +6984,11 @@ static const unsigned int obj_objs[NUM_OBJ] = {
     1485,    /* OBJ_SLH_DSA_SHAKE_256s_WITH_SHAKE256 2 16 840 1 101 3 4 3 45 */
     1486,    /* OBJ_SLH_DSA_SHAKE_256f_WITH_SHAKE256 2 16 840 1 101 3 4 3 46 */
     1454,    /* OBJ_ML_KEM_512                   2 16 840 1 101 3 4 4 1 */
+    1501,    /* OBJ_X25519MLKEM768               2 16 840 1 101 3 4 4 1 */
     1455,    /* OBJ_ML_KEM_768                   2 16 840 1 101 3 4 4 2 */
+    1502,    /* OBJ_SecP256r1MLKEM768            2 16 840 1 101 3 4 4 2 */
     1456,    /* OBJ_ML_KEM_1024                  2 16 840 1 101 3 4 4 3 */
+    1503,    /* OBJ_SecP384r1MLKEM1024           2 16 840 1 101 3 4 4 3 */
       71,    /* OBJ_netscape_cert_type           2 16 840 1 113730 1 1 */
       72,    /* OBJ_netscape_base_url            2 16 840 1 113730 1 2 */
       73,    /* OBJ_netscape_revocation_url      2 16 840 1 113730 1 3 */

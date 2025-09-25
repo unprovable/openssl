@@ -6646,6 +6646,23 @@
 #define NID_ML_KEM_1024         1456
 #define OBJ_ML_KEM_1024         OBJ_nistKems,3L
 
+#define OBJ_nistHybridKems              OBJ_nistAlgorithms,4L
+
+#define SN_X25519MLKEM768               "X25519MLKEM768"
+#define LN_X25519MLKEM768               "X25519MLKEM768"
+#define NID_X25519MLKEM768              1501
+#define OBJ_X25519MLKEM768              OBJ_nistHybridKems,1L
+
+#define SN_SecP256r1MLKEM768            "SecP256r1MLKEM768"
+#define LN_SecP256r1MLKEM768            "SecP256r1MLKEM768"
+#define NID_SecP256r1MLKEM768           1502
+#define OBJ_SecP256r1MLKEM768           OBJ_nistHybridKems,2L
+
+#define SN_SecP384r1MLKEM1024           "SecP384r1MLKEM1024"
+#define LN_SecP384r1MLKEM1024           "SecP384r1MLKEM1024"
+#define NID_SecP384r1MLKEM1024          1503
+#define OBJ_SecP384r1MLKEM1024          OBJ_nistHybridKems,3L
+
 #endif /* OPENSSL_OBJ_MAC_H */
 
 #ifndef OPENSSL_NO_DEPRECATED_3_0
