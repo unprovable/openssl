@@ -2862,8 +2862,8 @@ static const ASN1_OBJECT nid_objs[NUM_NID] = {
     {"id-smime-ori", "id-smime-ori", NID_id_smime_ori, 10, &so[9549]},
     {"id-smime-ori-kem", "id-smime-ori-kem", NID_id_smime_ori_kem, 11, &so[9559]},
     {"X25519MLKEM768", "X25519MLKEM768", NID_X25519MLKEM768, 9, &so[9570]},
-    {"SECP256R1MLKEM768", "SecP256r1MLKEM768", NID_SecP256r1MLKEM768, 9, &so[9579]},
-    {"SECP384R1MLKEM1024", "SecP384r1MLKEM1024", NID_SecP384r1MLKEM1024, 9, &so[9588]},
+    {"SecP256r1MLKEM768", "SecP256r1MLKEM768", NID_SecP256r1MLKEM768, 9, &so[9579]},
+    {"SecP384r1MLKEM1024", "SecP384r1MLKEM1024", NID_SecP384r1MLKEM1024, 9, &so[9588]},
 };
 
 #define NUM_SN 1495
@@ -3133,8 +3133,6 @@ static const unsigned int sn_objs[NUM_SN] = {
     1144,    /* "RSA-SM3" */
      919,    /* "RSAES-OAEP" */
      912,    /* "RSASSA-PSS" */
-    1502,    /* "SECP256R1MLKEM768" */
-    1503,    /* "SECP384R1MLKEM1024" */
      777,    /* "SEED-CBC" */
      779,    /* "SEED-CFB" */
      776,    /* "SEED-ECB" */
@@ -3174,6 +3172,8 @@ static const unsigned int sn_objs[NUM_SN] = {
     1205,    /* "SSKDF" */
       16,    /* "ST" */
      143,    /* "SXNetID" */
+    1502,    /* "SecP256r1MLKEM768" */
+    1503,    /* "SecP384r1MLKEM1024" */
     1062,    /* "SipHash" */
     1021,    /* "TLS1-PRF" */
      458,    /* "UID" */

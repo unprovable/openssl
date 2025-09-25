@@ -6653,12 +6653,12 @@
 #define NID_X25519MLKEM768              1501
 #define OBJ_X25519MLKEM768              OBJ_nistHybridKems,1L
 
-#define SN_SecP256r1MLKEM768            "SECP256R1MLKEM768"
+#define SN_SecP256r1MLKEM768            "SecP256r1MLKEM768"
 #define LN_SecP256r1MLKEM768            "SecP256r1MLKEM768"
 #define NID_SecP256r1MLKEM768           1502
 #define OBJ_SecP256r1MLKEM768           OBJ_nistHybridKems,2L
 
-#define SN_SecP384r1MLKEM1024           "SECP384R1MLKEM1024"
+#define SN_SecP384r1MLKEM1024           "SecP384r1MLKEM1024"
 #define LN_SecP384r1MLKEM1024           "SecP384r1MLKEM1024"
 #define NID_SecP384r1MLKEM1024          1503
 #define OBJ_SecP384r1MLKEM1024          OBJ_nistHybridKems,3L
