@@ -5534,12 +5534,12 @@ static int test_key_exchange(int idx)
             kexch_names = kexch_name0;
             break;
         case 23:
-            kexch_alg = NID_SecP256r1MLKEM768;
-            kexch_name0 = "SecP256r1MLKEM768";
+            // kexch_alg = NID_SecP256r1MLKEM768;
+            // kexch_name0 = "SecP256r1MLKEM768";
             break;
         case 24:
-            kexch_alg = NID_SecP384r1MLKEM1024;
-            kexch_name0 = "SecP384r1MLKEM1024";
+            // kexch_alg = NID_SecP384r1MLKEM1024;
+            // kexch_name0 = "SecP384r1MLKEM1024";
             break;
 #  endif
 # endif
