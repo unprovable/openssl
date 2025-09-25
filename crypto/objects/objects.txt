@@ -2066,3 +2066,8 @@ tcg-tr-category 37 : tcg-tr-cat-PublicKey 								: Public Key Trait Category
 nistKems 1 : id-alg-ml-kem-512  : ML-KEM-512
 nistKems 2 : id-alg-ml-kem-768  : ML-KEM-768
 nistKems 3 : id-alg-ml-kem-1024 : ML-KEM-1024
+
+!Alias nistHybridKems nistAlgorithms 4
+nistHybridKems 1 : X25519MLKEM768 : X25519MLKEM768
+nistHybridKems 2 : SecP256r1MLKEM768 : SecP256r1MLKEM768
+nistHybridKems 3 : SecP384r1MLKEM1024 : SecP384r1MLKEM1024
